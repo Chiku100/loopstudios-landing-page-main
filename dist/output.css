@@ -856,7 +856,9 @@ video {
     background-position: right bottom;
     transition: all .5s ease-out;
   }
-
+  .logofooter{
+    width:50%;
+  }
   .button:hover {
     background-position: left bottom;
   }
