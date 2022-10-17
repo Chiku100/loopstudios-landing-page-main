@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="./dist/output.css" rel="stylesheet">
+  <title>Frontend Mentor | Loopstudios landing page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="./build.css">
+</head>
+
+<body class="bg-white text-black 
+font-Alata space-y-20">
+
+  <header
+    class="w-full bg-hero-pattern p-5 md:p-10 lg:py-20 lg:px-32 h-[80vh] lg:h-[90vh] bg-center bg-no-repeat bg-cover lg:bg-hero-pattern-desktop">
+    <nav class="flex justify-between w-full ">
+      <img class=" x" src="./images/logo.svg" alt="logo">
+      <ul class=" hidden lg:flex  w-[90%] flex-row text-white gap-5 lg:w-[30%]">
+        <li class="cursor-pointer  about py-1 relative border-b-white"><a href="#">About</a> </li>
+        <li class="cursor-pointer careers py-1 relative "><a href="#">Careers</a> </li>
+        <li class="cursor-pointer events py-1 relative"><a href="#">Events</a> </li>
+        <li class="cursor-pointer products py-1 relative "><a href="#">Products</a> </li>
+        <li class="cursor-pointer support py-1 relative "><a href="#">Support</a> </li>
+      </ul>
+      <button class=" y lg:hidden"><img src="./images/icon-hamburger.svg" alt="icon-hamburger"></button>
+      <div class="bg-black h-screen w-full p-5 toggler hidden ">
+        <div class="flex my-5 justify-between">
+          <img src="./images/logo.svg" alt="logo">
+          <img class="w-[2rem]" src="./images/icon-close.svg" alt="icon-close">
+        </div>
+        <div class="text-white text-2xl uppercase flex flex-col h-[50%] justify-center font-josefin space-y-5">
+          <p>About</p>
+          <p>Careers</p>
+          <p>Events</p>
+          <p>Products</p>
+          <p>Support</p>
+        </div>
+      </div>
+    </nav>
+    <div class=" flex h-[90%] justify-center items-center md:text-center lg:justify-start">
+      <h1
+        class="text-4xl text-white font-josefin uppercase h-40 md:h-auto p-5 border-2 border-white lg:w-1/2 lg:text-6xl lg:p-10 lg:text-left">
+        Immersive
+        experiences that
+        deliver
+      </h1>
+    </div>
+  </header>
+  <main class="p-5 md:p-10 space-y-10 lg:px-32 text-center flex flex-col justify-center">
+    <section class="md:flex md:flex-col md:justify-center relative">
+      <img class="lg:w-[60%]" src="./images/mobile/image-interactive.jpg" alt="interactive">
+      <div class="lg:relative">
+        <div class="lg:w-1/2 lg:p-16 lg:text-left lg:absolute bottom-[-4rem] bg-white left-[30rem]">
+          <h2 class="text-4xl uppercase font-josefin my-10 lg:my-5"> The leader in interactive VR</h2>
+          <p class="text-[#696969]">Founded in 2011, Loopstudios has been producing world-class virtual reality
+            projects for some of the best companies around the globe. Our award-winning
+            creations have transformed businesses through digital experiences that bind
+            to their brand.</p>
+        </div>
+      </div>
+    </section>
+    <div class="lg:flex lg:justify-between lg:items-center">
+      <h2 class="text-4xl uppercase font-josefin  my-10">Our creations</h2>
+      <div class="button lg:flex justify-center  hidden">
+        <p class="text-xl w-full   trap   uppercase cursor-pointer ">
+          See all</p>
+      </div>
+    </div>
+    <div class="lg:flex lg:justify-between space-y-10">
+      <div></div>
+      <div
+        class="bg-earth lg:bg-earth-desktop h-40 hover:opacity-30 hover:text-black  cursor-pointer lg:w-[23%] lg:h-96 bg-center bg-cover flex items-end md:h-60">
+        <p class="text-white text-2xl  px-5 uppercase pb-5 font-josefin w-1/3 md:w-1/2">Deep earth</p>
+      </div>
+      <div
+        class="bg-arcade lg:bg-arcade-desktop lg:w-[23%] hover:opacity-30  cursor-pointer lg:h-96 h-40 bg-center bg-contain flex items-end md:h-60">
+        <p class="text-white text-2xl px-5 uppercase pb-5 font-josefin w-1/3 md:w-1/2">Night arcade</p>
+      </div>
+      <div
+        class="h-40 bg-center  lg:bg-soccer-desktop hover:opacity-30  cursor-pointer lg:w-[23%] lg:h-96  bg-cover bg-soccer flex items-end md:h-60">
+        <p class="text-white   text-2xl  px-5 uppercase  pb-5 font-josefin w-1/2">Soccer team VR</p>
+      </div>
+      <div
+        class="h-40 bg-center bg-cover bg-grid hover:opacity-30  cursor-pointer lg:h-96 lg:w-[23%] lg:bg-grid-desktop flex items-end md:h-60">
+        <p class="text-white text-2xl px-5 uppercase  pb-5 font-josefin w-1/3 md:1/2">The grid</p>
+      </div>
+    </div>
+    <div class="lg:flex lg:justify-between space-y-10">
+      <div ></div>
+      <div
+        class="h-40 bg-center bg-cover lg:w-[23%] hover:opacity-30  cursor-pointer bg-above lg:h-96 lg:bg-above-desktop flex items-end md:h-60">
+        <p class="text-white text-2xl px-5 uppercase pb-5 font-josefin w-1/2">From up above VR</p>
+      </div>
+      <div
+        class="h-40 bg-center bg-cover lg:w-[23%] hover:opacity-30  cursor-pointer bg-pocket lg:h-96 lg:bg-pocket-desktop flex items-end md:h-60">
+        <p class="text-white text-2xl px-5 uppercase pb-5 font-josefin w-1/3 md:1/2">Pocket borealis</p>
+      </div>
+      <div
+        class="h-40 bg-center bg-cover lg:w-[23%] hover:opacity-30  cursor-pointer bg-curiosity lg:h-96 lg:bg-curiosity-desktop flex items-end md:h-60">
+        <p class="text-white text-2xl px-5 hover:text-black uppercase pb-5 font-josefin w-1/3 md:1/2">The curiosity</p>
+      </div>
+      <div
+        class="h-40 bg-center bg-cover lg:w-[23%] hover:opacity-30  cursor-pointer bg-fish lg:h-96 lg:bg-fish-desktop flex items-end md:h-60">
+        <p class="text-white text-2xl uppercase px-5 pb-5 font-josefin w-1/2 ">Make it fisheye</p>
+      </div>
+    </div>
+    <div class="w-full flex justify-center lg:hidden">
+      <p class="text-2xl border-2 p-5 border-black w-1/2 ">See all</p>
+    </div>
+
+  </main>
+  <footer
+    class="bg-black p-10 flex flex-col lg:px-32 text-white space-y-5 justify-center items-center lg:flex-row lg:justify-between">
+    <div class="lg:flex lg:flex-col ">
+      <img class="w-[100%] lg:w-[50%]" src="./images/logo.svg" alt="logo">
+      <div
+        class="flex flex-col justify-center items-center  lg:justify-start lg:w-1/2 space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0 lg:my-5">
+        <!-- <span></span> -->
+        <span class="hover:border-b-2  py-1 cursor-pointer border-b-white">About</span>
+        <span class="hover:border-b-2 py-1 cursor-pointer border-b-white">Careers</span>
+        <span class="hover:border-b-2 py-1 cursor-pointer border-b-white">Events</span>
+        <span class="hover:border-b-2 py-1 cursor-pointer border-b-white">Products</span>
+        <span class="hover:border-b-2 py-1 cursor-pointer border-b-white">Support</span>
+      </div>
+    </div>
+    <div class="lg:flex lg:flex-col ">
+      <div class="flex justify-center lg:justify-end lg:my-5 space-x-5 items-center">
+        <i class="fa-brands fa-facebook  my-4 hover:border-b-2 py-1 cursor-pointer border-b-white"></i>
+        <i class="fa-brands fa-twitter  hover:border-b-2 py-1 cursor-pointer border-b-white"></i>
+        <i class="fa-brands fa-pinterest hover:border-b-2 py-1 cursor-pointer border-b-white"></i>
+        <i class="fa-brands fa-instagram hover:border-b-2 py-1 cursor-pointer border-b-white"></i>
+      </div>
+      <span class="text-[#8c8c8c]">© 2021 Loopstudios. All rights reserved.</span>
+    </div>
+  </footer>
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./index.js"></script>
+</body>
+
+</html>
